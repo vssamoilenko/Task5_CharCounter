@@ -3,12 +3,17 @@ package com.foxminded.charcounter;
 public class Main {
 
     public static void main(String[] args) {
-        //20
+
         CharCounter createTable = new CharCounter();
-        String getInputText = "";
-        while (!getInputText.equals("q")) {
+        String getInputText;
+        while (true) {
             getInputText = InputText.getString();
-            createTable.getUniqueChars(getInputText);
+            if (getInputText.equals("q")) {
+                System.out.println("Quit from programm");
+                break;
+            } else {
+                createTable.getUniqueChars(getInputText);
+            }
         }
     }
 
