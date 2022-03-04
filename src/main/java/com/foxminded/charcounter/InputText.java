@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class InputText {
 
     public static String getString() {
-        //10
+        //15
         String inputString;
         System.out.println("Input the string and press Enter or enter 'q' for quit");
         Scanner myObj = new Scanner(System.in);
